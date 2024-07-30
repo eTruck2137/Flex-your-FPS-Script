@@ -1,20 +1,41 @@
--- Gui to Lua
--- Version: 3.2
-
+-- Gui made for Flex your FPS! by RTYQZ
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local ez = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
 local medium = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
 local hard = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
 local extreme = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 local fps1 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
 local fps4 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 local fps2 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
 local fps5 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 local fps3 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
+local fps11 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local fps21 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local fps31 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local fps31_2 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local fps41 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local fps51 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
 
 --Properties:
 
@@ -26,8 +47,8 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.36520505, 0, 0.341447085, 0)
-Frame.Size = UDim2.new(0, 189, 0, 155)
+Frame.Position = UDim2.new(0.654317498, 0, 0.226329744, 0)
+Frame.Size = UDim2.new(0, 254, 0, 182)
 Frame.Active = true
 Frame.Draggable = true
 
@@ -36,8 +57,8 @@ ez.Parent = Frame
 ez.BackgroundColor3 = Color3.fromRGB(0, 255, 30)
 ez.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ez.BorderSizePixel = 0
-ez.Position = UDim2.new(0.049232848, 0, 0.153276801, 0)
-ez.Size = UDim2.new(0, 93, 0, 20)
+ez.Position = UDim2.new(0.0494267009, 0, 0.149439529, 0)
+ez.Size = UDim2.new(0, 99, 0, 22)
 ez.Font = Enum.Font.Michroma
 ez.Text = "Complete Easy Obby"
 ez.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -67,13 +88,16 @@ ez.MouseButton1Down:connect(function()
 	end)
 end)
 
+UICorner.CornerRadius = UDim.new(0, 16)
+UICorner.Parent = ez
+
 medium.Name = "medium"
 medium.Parent = Frame
 medium.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
 medium.BorderColor3 = Color3.fromRGB(0, 0, 0)
 medium.BorderSizePixel = 0
-medium.Position = UDim2.new(0.049232848, 0, 0.315133572, 0)
-medium.Size = UDim2.new(0, 93, 0, 20)
+medium.Position = UDim2.new(0.0494267009, 0, 0.313075542, 0)
+medium.Size = UDim2.new(0, 99, 0, 22)
 medium.Font = Enum.Font.Michroma
 medium.Text = "Complete Medium Obby"
 medium.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -103,13 +127,16 @@ medium.MouseButton1Down:connect(function()
 	end)
 end)
 
+UICorner_2.CornerRadius = UDim.new(0, 16)
+UICorner_2.Parent = medium
+
 hard.Name = "hard"
 hard.Parent = Frame
 hard.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 hard.BorderColor3 = Color3.fromRGB(0, 0, 0)
 hard.BorderSizePixel = 0
-hard.Position = UDim2.new(0.049232848, 0, 0.485739022, 0)
-hard.Size = UDim2.new(0, 93, 0, 20)
+hard.Position = UDim2.new(0.0494267009, 0, 0.485556245, 0)
+hard.Size = UDim2.new(0, 99, 0, 22)
 hard.Font = Enum.Font.Michroma
 hard.Text = "Complete Hard Obby"
 hard.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -139,13 +166,16 @@ hard.MouseButton1Down:connect(function()
 	end)
 end)
 
+UICorner_3.CornerRadius = UDim.new(0, 16)
+UICorner_3.Parent = hard
+
 extreme.Name = "extreme"
 extreme.Parent = Frame
 extreme.BackgroundColor3 = Color3.fromRGB(255, 0, 234)
 extreme.BorderColor3 = Color3.fromRGB(0, 0, 0)
 extreme.BorderSizePixel = 0
-extreme.Position = UDim2.new(0.049232848, 0, 0.656344533, 0)
-extreme.Size = UDim2.new(0, 93, 0, 20)
+extreme.Position = UDim2.new(0.0494267009, 0, 0.658037305, 0)
+extreme.Size = UDim2.new(0, 99, 0, 22)
 extreme.Font = Enum.Font.Michroma
 extreme.Text = "Complete Extreme Obby"
 extreme.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -175,13 +205,16 @@ extreme.MouseButton1Down:connect(function()
 	end)
 end)
 
+UICorner_4.CornerRadius = UDim.new(0, 16)
+UICorner_4.Parent = extreme
+
 fps1.Name = "fps1"
 fps1.Parent = Frame
 fps1.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 fps1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 fps1.BorderSizePixel = 0
-fps1.Position = UDim2.new(0.597803175, 0, 0.153276801, 0)
-fps1.Size = UDim2.new(0, 70, 0, 20)
+fps1.Position = UDim2.new(0.720481813, 0, 0.149439529, 0)
+fps1.Size = UDim2.new(0, 57, 0, 22)
 fps1.Font = Enum.Font.Michroma
 fps1.Text = "0 FPS"
 fps1.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -198,14 +231,16 @@ fps1.MouseButton1Down:connect(function()
 	end
 end)
 
+UICorner_5.CornerRadius = UDim.new(0, 16)
+UICorner_5.Parent = fps1
 
 fps4.Name = "fps4"
 fps4.Parent = Frame
 fps4.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 fps4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 fps4.BorderSizePixel = 0
-fps4.Position = UDim2.new(0.597803175, 0, 0.647595584, 0)
-fps4.Size = UDim2.new(0, 70, 0, 20)
+fps4.Position = UDim2.new(0.720481813, 0, 0.657018244, 0)
+fps4.Size = UDim2.new(0, 57, 0, 22)
 fps4.Font = Enum.Font.Michroma
 fps4.Text = "3500 FPS"
 fps4.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -222,14 +257,16 @@ fps4.MouseButton1Down:connect(function()
 	end
 end)
 
+UICorner_6.CornerRadius = UDim.new(0, 16)
+UICorner_6.Parent = fps4
 
 fps2.Name = "fps2"
 fps2.Parent = Frame
 fps2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 fps2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 fps2.BorderSizePixel = 0
-fps2.Position = UDim2.new(0.597803175, 0, 0.315133572, 0)
-fps2.Size = UDim2.new(0, 70, 0, 20)
+fps2.Position = UDim2.new(0.720481813, 0, 0.315637916, 0)
+fps2.Size = UDim2.new(0, 57, 0, 22)
 fps2.Font = Enum.Font.Michroma
 fps2.Text = "1000 FPS"
 fps2.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -246,14 +283,16 @@ fps2.MouseButton1Down:connect(function()
 	end
 end)
 
+UICorner_7.CornerRadius = UDim.new(0, 16)
+UICorner_7.Parent = fps2
 
 fps5.Name = "fps5"
 fps5.Parent = Frame
 fps5.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 fps5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 fps5.BorderSizePixel = 0
-fps5.Position = UDim2.new(0.597803175, 0, 0.818201303, 0)
-fps5.Size = UDim2.new(0, 70, 0, 20)
+fps5.Position = UDim2.new(0.720481813, 0, 0.832200289, 0)
+fps5.Size = UDim2.new(0, 57, 0, 22)
 fps5.Font = Enum.Font.Michroma
 fps5.Text = "5000 FPS"
 fps5.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -270,14 +309,16 @@ fps5.MouseButton1Down:connect(function()
 	end
 end)
 
+UICorner_8.CornerRadius = UDim.new(0, 16)
+UICorner_8.Parent = fps5
 
 fps3.Name = "fps3"
 fps3.Parent = Frame
 fps3.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 fps3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 fps3.BorderSizePixel = 0
-fps3.Position = UDim2.new(0.597803175, 0, 0.476990134, 0)
-fps3.Size = UDim2.new(0, 70, 0, 20)
+fps3.Position = UDim2.new(0.720481813, 0, 0.481836051, 0)
+fps3.Size = UDim2.new(0, 57, 0, 22)
 fps3.Font = Enum.Font.Michroma
 fps3.Text = "2000 FPS"
 fps3.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -294,13 +335,15 @@ fps3.MouseButton1Down:connect(function()
 	end
 end)
 
+UICorner_9.CornerRadius = UDim.new(0, 16)
+UICorner_9.Parent = fps3
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, -0.000491529878, 0)
-TextLabel.Size = UDim2.new(0, 189, 0, 20)
+TextLabel.Position = UDim2.new(0, 0, -0.00602224795, 0)
+TextLabel.Size = UDim2.new(0, 254, 0, 23)
 TextLabel.Font = Enum.Font.Michroma
 TextLabel.Text = "eTruck2137's Flex Your FPS! Gui"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -308,9 +351,171 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 19.000
 TextLabel.TextWrapped = true
 
+UICorner_10.CornerRadius = UDim.new(0, 16)
+UICorner_10.Parent = TextLabel
+
+UICorner_11.CornerRadius = UDim.new(0, 16)
+UICorner_11.Parent = Frame
+
+fps11.Name = "fps11"
+fps11.Parent = Frame
+fps11.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+fps11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps11.BorderSizePixel = 0
+fps11.Position = UDim2.new(0.469973832, 0, 0.149439529, 0)
+fps11.Size = UDim2.new(0, 57, 0, 22)
+fps11.Font = Enum.Font.Michroma
+fps11.Text = "500 FPS"
+fps11.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps11.TextScaled = true
+fps11.TextSize = 14.000
+fps11.TextWrapped = true
+fps11.MouseButton1Down:connect(function()
+	while true do
+		local args = {
+			[1] = 500
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end)
+
+UICorner_12.CornerRadius = UDim.new(0, 16)
+UICorner_12.Parent = fps11
+
+fps21.Name = "fps21"
+fps21.Parent = Frame
+fps21.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+fps21.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps21.BorderSizePixel = 0
+fps21.Position = UDim2.new(0.469973832, 0, 0.311697513, 0)
+fps21.Size = UDim2.new(0, 57, 0, 22)
+fps21.Font = Enum.Font.Michroma
+fps21.Text = "3000 FPS"
+fps21.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps21.TextScaled = true
+fps21.TextSize = 14.000
+fps21.TextWrapped = true
+fps21.MouseButton1Down:connect(function()
+	while true do
+		local args = {
+			[1] = 3000
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end)
+
+UICorner_13.CornerRadius = UDim.new(0, 16)
+UICorner_13.Parent = fps21
+
+fps31.Name = "fps31"
+fps31.Parent = Frame
+fps31.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+fps31.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps31.BorderSizePixel = 0
+fps31.Position = UDim2.new(0.469973832, 0, 0.480196208, 0)
+fps31.Size = UDim2.new(0, 57, 0, 22)
+fps31.Font = Enum.Font.Michroma
+fps31.Text = "4000 FPS"
+fps31.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps31.TextScaled = true
+fps31.TextSize = 14.000
+fps31.TextWrapped = true
+fps31.MouseButton1Down:connect(function()
+	while true do
+		local args = {
+			[1] = 4000
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end)
+
+UICorner_14.CornerRadius = UDim.new(0, 16)
+UICorner_14.Parent = fps31
+
+fps31_2.Name = "fps31"
+fps31_2.Parent = Frame
+fps31_2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+fps31_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps31_2.BorderSizePixel = 0
+fps31_2.Position = UDim2.new(0.469973832, 0, 0.654935777, 0)
+fps31_2.Size = UDim2.new(0, 57, 0, 22)
+fps31_2.Font = Enum.Font.Michroma
+fps31_2.Text = "240 FPS"
+fps31_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps31_2.TextScaled = true
+fps31_2.TextSize = 14.000
+fps31_2.TextWrapped = true
+fps31_2.MouseButton1Down:connect(function()
+	while true do
+		local args = {
+			[1] = 240
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end)
+
+UICorner_15.CornerRadius = UDim.new(0, 16)
+UICorner_15.Parent = fps31_2
+
+fps41.Name = "fps41"
+fps41.Parent = Frame
+fps41.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+fps41.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps41.BorderSizePixel = 0
+fps41.Position = UDim2.new(0.469973832, 0, 0.829675257, 0)
+fps41.Size = UDim2.new(0, 57, 0, 22)
+fps41.Font = Enum.Font.Michroma
+fps41.Text = "120 FPS"
+fps41.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps41.TextScaled = true
+fps41.TextSize = 14.000
+fps41.TextWrapped = true
+fps41.MouseButton1Down:connect(function()
+	while true do
+		local args = {
+			[1] = 120
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end)
+
+UICorner_16.CornerRadius = UDim.new(0, 16)
+UICorner_16.Parent = fps41
+
+fps51.Name = "fps51"
+fps51.Parent = Frame
+fps51.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+fps51.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps51.BorderSizePixel = 0
+fps51.Position = UDim2.new(0.212662339, 0, 0.829675257, 0)
+fps51.Size = UDim2.new(0, 57, 0, 22)
+fps51.Font = Enum.Font.Michroma
+fps51.Text = "1 FPS"
+fps51.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps51.TextScaled = true
+fps51.TextSize = 14.000
+fps51.TextWrapped = true
+fps51.MouseButton1Down:connect(function()
+	while true do
+		local args = {
+			[1] = 1
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end)
+
+UICorner_17.CornerRadius = UDim.new(0, 16)
+UICorner_17.Parent = fps51
+
 -- Scripts:
 
-local function SPEV_fake_script() -- ez.TeleportOnClick 
+local function OFJDFYZ_fake_script() -- ez.TeleportOnClick 
 	local script = Instance.new('LocalScript', ez)
 
 	local targetPosition = Vector3.new(-1630.39, 32.05, 2010.47)
@@ -334,8 +539,8 @@ local function SPEV_fake_script() -- ez.TeleportOnClick
 	    end
 	end)
 end
-coroutine.wrap(SPEV_fake_script)()
-local function LHIU_fake_script() -- medium.TeleportOnClick 
+coroutine.wrap(OFJDFYZ_fake_script)()
+local function FTCKQUX_fake_script() -- medium.TeleportOnClick 
 	local script = Instance.new('LocalScript', medium)
 
 	local targetPosition = Vector3.new(-1829.4, 75.05, 1940.06)
@@ -359,8 +564,8 @@ local function LHIU_fake_script() -- medium.TeleportOnClick
 	    end
 	end)
 end
-coroutine.wrap(LHIU_fake_script)()
-local function JULW_fake_script() -- hard.TeleportOnClick 
+coroutine.wrap(FTCKQUX_fake_script)()
+local function YXYLG_fake_script() -- hard.TeleportOnClick 
 	local script = Instance.new('LocalScript', hard)
 
 	local targetPosition = Vector3.new(-2051.76, 22.05, 1873.92)
@@ -384,8 +589,8 @@ local function JULW_fake_script() -- hard.TeleportOnClick
 	    end
 	end)
 end
-coroutine.wrap(JULW_fake_script)()
-local function SNDJYYN_fake_script() -- extreme.TeleportOnClick 
+coroutine.wrap(YXYLG_fake_script)()
+local function FTZWAT_fake_script() -- extreme.TeleportOnClick 
 	local script = Instance.new('LocalScript', extreme)
 
 	local targetPosition = Vector3.new(-2034.85, 93.05, 1598.7)
@@ -409,8 +614,8 @@ local function SNDJYYN_fake_script() -- extreme.TeleportOnClick
 	    end
 	end)
 end
-coroutine.wrap(SNDJYYN_fake_script)()
-local function BYYD_fake_script() -- fps1.LocalScript 
+coroutine.wrap(FTZWAT_fake_script)()
+local function XSKDY_fake_script() -- fps1.LocalScript 
 	local script = Instance.new('LocalScript', fps1)
 
 	while true do
@@ -421,8 +626,8 @@ local function BYYD_fake_script() -- fps1.LocalScript
 		wait(0.01)
 	end
 end
-coroutine.wrap(BYYD_fake_script)()
-local function UTGAEAW_fake_script() -- fps4.LocalScript 
+coroutine.wrap(XSKDY_fake_script)()
+local function PTTLLPN_fake_script() -- fps4.LocalScript 
 	local script = Instance.new('LocalScript', fps4)
 
 	while true do
@@ -433,8 +638,8 @@ local function UTGAEAW_fake_script() -- fps4.LocalScript
 		wait(0.01)
 	end
 end
-coroutine.wrap(UTGAEAW_fake_script)()
-local function TWIORUS_fake_script() -- fps2.LocalScript 
+coroutine.wrap(PTTLLPN_fake_script)()
+local function AXVYZIJ_fake_script() -- fps2.LocalScript 
 	local script = Instance.new('LocalScript', fps2)
 
 	while true do
@@ -445,8 +650,8 @@ local function TWIORUS_fake_script() -- fps2.LocalScript
 		wait(0.01)
 	end
 end
-coroutine.wrap(TWIORUS_fake_script)()
-local function IWEVMXE_fake_script() -- fps5.LocalScript 
+coroutine.wrap(AXVYZIJ_fake_script)()
+local function GPEVIFW_fake_script() -- fps5.LocalScript 
 	local script = Instance.new('LocalScript', fps5)
 
 	while true do
@@ -457,8 +662,8 @@ local function IWEVMXE_fake_script() -- fps5.LocalScript
 		wait(0.01)
 	end
 end
-coroutine.wrap(IWEVMXE_fake_script)()
-local function VWISAK_fake_script() -- fps3.LocalScript 
+coroutine.wrap(GPEVIFW_fake_script)()
+local function VGKVHL_fake_script() -- fps3.LocalScript 
 	local script = Instance.new('LocalScript', fps3)
 
 	while true do
@@ -469,101 +674,76 @@ local function VWISAK_fake_script() -- fps3.LocalScript
 		wait(0.01)
 	end
 end
-coroutine.wrap(VWISAK_fake_script)()
-local function FWXJ_fake_script() -- Frame.Drag 
-	local script = Instance.new('LocalScript', Frame)
+coroutine.wrap(VGKVHL_fake_script)()
+local function RQRJZQD_fake_script() -- fps11.LocalScript 
+	local script = Instance.new('LocalScript', fps11)
 
-	local UserInputService = game:GetService('UserInputService')
-	
-	local frame = script.Parent
-	
-	local leadFrame = Instance.new('Frame') do
-		leadFrame.AnchorPoint = frame.AnchorPoint
-		leadFrame.Position = frame.Position
-		leadFrame.Size = frame.Size
-		leadFrame.Name = `Lead {frame.Name}`
-		leadFrame.Visible = false
-		leadFrame.Parent = frame.Parent
-	end
-	
-	local screenGui = frame:FindFirstAncestorOfClass('ScreenGui')
-	
-	local inputChanged = nil
-	local inputEnded = nil
-	
-	local function getBoundsRelations(guiObject : GuiObject)
-		local bounds = screenGui.AbsoluteSize
-		local topLeft = screenGui.IgnoreGuiInset and guiObject.AbsolutePosition + Vector2.new(0, 36) or guiObject.AbsolutePosition
-		local bottomRight = topLeft + guiObject.AbsoluteSize
-	
-		local boundRelations = {
-			Top = topLeft.Y < 0 and math.abs(topLeft.Y) or nil,
-			Left = topLeft.X < 0 and math.abs(topLeft.X) or nil,
-			Right = bottomRight.X > bounds.X and math.abs(bottomRight.X - bounds.X) or nil,
-			Bottom = bottomRight.Y > bounds.Y and math.abs(bottomRight.Y - bounds.Y) or nil,
+	while true do
+		local args = {
+			[1] = 500
 		}
-	
-		return (not boundRelations.Top
-			and not boundRelations.Bottom
-			and not boundRelations.Left
-			and not boundRelations.Right), boundRelations
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
 	end
-	
-	frame.InputBegan:Connect(function(inputObject : InputObject)
-		if inputObject.UserInputType == Enum.UserInputType.MouseButton1 then
-	
-			local lastMousePosition = UserInputService:GetMouseLocation()
-			local goalPosition = frame.Position
-	
-			inputChanged = UserInputService.InputChanged:Connect(function(input : InputObject, event : boolean)
-				if input.UserInputType == Enum.UserInputType.MouseMovement then
-					local currentMousePosition = UserInputService:GetMouseLocation()
-					local mouseDelta = currentMousePosition - lastMousePosition
-	
-					goalPosition += UDim2.fromOffset(mouseDelta.X, mouseDelta.Y)
-	
-					leadFrame.Position = goalPosition
-	
-					local isInBounds, relations = getBoundsRelations(leadFrame)
-	
-					if not isInBounds then
-						local x = (relations.Left or 0) - (relations.Right or 0)
-						local y = (relations.Top or 0) - (relations.Bottom or 0)
-	
-						goalPosition += UDim2.fromOffset(x, y)
-					end
-	
-					frame.Position = goalPosition
-					lastMousePosition = currentMousePosition
-				end
-			end)
-	
-			inputEnded = frame.InputEnded:Connect(function(input : InputObject)
-				if input.UserInputType == Enum.UserInputType.MouseButton1 then
-					inputChanged:Disconnect()
-					inputChanged = nil
-	
-					inputEnded:Disconnect()
-					inputEnded = nil
-				end
-			end)
-		end
-	end)
-	
-	frame.Destroying:Once(function()
-	
-		leadFrame = leadFrame:Destroy()
-	
-		if inputChanged  then
-			inputChanged:Disconnect()
-			inputChanged = nil
-		end
-	
-		if inputEnded then
-			inputEnded:Disconnect()
-			inputEnded = nil
-		end
-	end)
-	
 end
-coroutine.wrap(FWXJ_fake_script)()
+coroutine.wrap(RQRJZQD_fake_script)()
+local function LNAU_fake_script() -- fps21.LocalScript 
+	local script = Instance.new('LocalScript', fps21)
+
+	while true do
+		local args = {
+			[1] = 3000
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end
+coroutine.wrap(LNAU_fake_script)()
+local function WPOLI_fake_script() -- fps31.LocalScript 
+	local script = Instance.new('LocalScript', fps31)
+
+	while true do
+		local args = {
+			[1] = 4000
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end
+coroutine.wrap(WPOLI_fake_script)()
+local function KQEXING_fake_script() -- fps31_2.LocalScript 
+	local script = Instance.new('LocalScript', fps31_2)
+
+	while true do
+		local args = {
+			[1] = 240
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end
+coroutine.wrap(KQEXING_fake_script)()
+local function TLIXSX_fake_script() -- fps41.LocalScript 
+	local script = Instance.new('LocalScript', fps41)
+
+	while true do
+		local args = {
+			[1] = 120
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end
+coroutine.wrap(TLIXSX_fake_script)()
+local function VDRDVO_fake_script() -- fps51.LocalScript 
+	local script = Instance.new('LocalScript', fps51)
+
+	while true do
+		local args = {
+			[1] = 1
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end
+coroutine.wrap(VDRDVO_fake_script)()
