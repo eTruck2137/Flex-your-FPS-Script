@@ -1,0 +1,569 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ez = Instance.new("TextButton")
+local medium = Instance.new("TextButton")
+local hard = Instance.new("TextButton")
+local extreme = Instance.new("TextButton")
+local fps1 = Instance.new("TextButton")
+local fps4 = Instance.new("TextButton")
+local fps2 = Instance.new("TextButton")
+local fps5 = Instance.new("TextButton")
+local fps3 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.36520505, 0, 0.341447085, 0)
+Frame.Size = UDim2.new(0, 189, 0, 155)
+Frame.Active = true
+Frame.Draggable = true
+
+ez.Name = "ez"
+ez.Parent = Frame
+ez.BackgroundColor3 = Color3.fromRGB(0, 255, 30)
+ez.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ez.BorderSizePixel = 0
+ez.Position = UDim2.new(0.049232848, 0, 0.153276801, 0)
+ez.Size = UDim2.new(0, 93, 0, 20)
+ez.Font = Enum.Font.Michroma
+ez.Text = "Complete Easy Obby"
+ez.TextColor3 = Color3.fromRGB(0, 0, 0)
+ez.TextScaled = true
+ez.TextSize = 14.000
+ez.TextWrapped = true
+ez.MouseButton1Down:connect(function()
+	local targetPosition = Vector3.new(-1630.39, 32.05, 2010.47)
+
+	local textButton = script.Parent
+
+	local function teleportPlayer(player)
+		local character = player.Character or player.CharacterAdded:Wait()
+		if character then
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart then
+				humanoidRootPart.CFrame = CFrame.new(targetPosition)
+			end
+		end
+	end
+
+	textButton.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		if player then
+			teleportPlayer(player)
+		end
+	end)
+end)
+
+medium.Name = "medium"
+medium.Parent = Frame
+medium.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+medium.BorderColor3 = Color3.fromRGB(0, 0, 0)
+medium.BorderSizePixel = 0
+medium.Position = UDim2.new(0.049232848, 0, 0.315133572, 0)
+medium.Size = UDim2.new(0, 93, 0, 20)
+medium.Font = Enum.Font.Michroma
+medium.Text = "Complete Medium Obby"
+medium.TextColor3 = Color3.fromRGB(0, 0, 0)
+medium.TextScaled = true
+medium.TextSize = 14.000
+medium.TextWrapped = true
+medium.MouseButton1Down:connect(function()
+	local targetPosition = Vector3.new(-1829.4, 75.05, 1940.06)
+
+	local textButton = script.Parent
+
+	local function teleportPlayer(player)
+		local character = player.Character or player.CharacterAdded:Wait()
+		if character then
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart then
+				humanoidRootPart.CFrame = CFrame.new(targetPosition)
+			end
+		end
+	end
+
+	textButton.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		if player then
+			teleportPlayer(player)
+		end
+	end)
+end)
+
+hard.Name = "hard"
+hard.Parent = Frame
+hard.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+hard.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hard.BorderSizePixel = 0
+hard.Position = UDim2.new(0.049232848, 0, 0.485739022, 0)
+hard.Size = UDim2.new(0, 93, 0, 20)
+hard.Font = Enum.Font.Michroma
+hard.Text = "Complete Hard Obby"
+hard.TextColor3 = Color3.fromRGB(0, 0, 0)
+hard.TextScaled = true
+hard.TextSize = 14.000
+hard.TextWrapped = true
+hard.MouseButton1Down:connect(function()
+	local targetPosition = Vector3.new(-2051.76, 22.05, 1873.92)
+
+	local textButton = script.Parent
+
+	local function teleportPlayer(player)
+		local character = player.Character or player.CharacterAdded:Wait()
+		if character then
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart then
+				humanoidRootPart.CFrame = CFrame.new(targetPosition)
+			end
+		end
+	end
+
+	textButton.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		if player then
+			teleportPlayer(player)
+		end
+	end)
+end)
+
+extreme.Name = "extreme"
+extreme.Parent = Frame
+extreme.BackgroundColor3 = Color3.fromRGB(255, 0, 234)
+extreme.BorderColor3 = Color3.fromRGB(0, 0, 0)
+extreme.BorderSizePixel = 0
+extreme.Position = UDim2.new(0.049232848, 0, 0.656344533, 0)
+extreme.Size = UDim2.new(0, 93, 0, 20)
+extreme.Font = Enum.Font.Michroma
+extreme.Text = "Complete Extreme Obby"
+extreme.TextColor3 = Color3.fromRGB(0, 0, 0)
+extreme.TextScaled = true
+extreme.TextSize = 14.000
+extreme.TextWrapped = true
+extreme.MouseButton1Down:connect(function()
+	local targetPosition = Vector3.new(-2034.85, 93.05, 1598.7)
+
+	local textButton = script.Parent
+
+	local function teleportPlayer(player)
+		local character = player.Character or player.CharacterAdded:Wait()
+		if character then
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart then
+				humanoidRootPart.CFrame = CFrame.new(targetPosition)
+			end
+		end
+	end
+
+	textButton.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		if player then
+			teleportPlayer(player)
+		end
+	end)
+end)
+
+fps1.Name = "fps1"
+fps1.Parent = Frame
+fps1.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+fps1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps1.BorderSizePixel = 0
+fps1.Position = UDim2.new(0.597803175, 0, 0.153276801, 0)
+fps1.Size = UDim2.new(0, 70, 0, 20)
+fps1.Font = Enum.Font.Michroma
+fps1.Text = "0 FPS"
+fps1.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps1.TextScaled = true
+fps1.TextSize = 14.000
+fps1.TextWrapped = true
+fps1.MouseButton1Down:connect(function()
+	while true do
+		local args = {
+			[1] = 0
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end)
+
+
+fps4.Name = "fps4"
+fps4.Parent = Frame
+fps4.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+fps4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps4.BorderSizePixel = 0
+fps4.Position = UDim2.new(0.597803175, 0, 0.647595584, 0)
+fps4.Size = UDim2.new(0, 70, 0, 20)
+fps4.Font = Enum.Font.Michroma
+fps4.Text = "3500 FPS"
+fps4.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps4.TextScaled = true
+fps4.TextSize = 14.000
+fps4.TextWrapped = true
+fps4.MouseButton1Down:connect(function()
+	while true do
+		local args = {
+			[1] = 3500
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end)
+
+
+fps2.Name = "fps2"
+fps2.Parent = Frame
+fps2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+fps2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps2.BorderSizePixel = 0
+fps2.Position = UDim2.new(0.597803175, 0, 0.315133572, 0)
+fps2.Size = UDim2.new(0, 70, 0, 20)
+fps2.Font = Enum.Font.Michroma
+fps2.Text = "1000 FPS"
+fps2.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps2.TextScaled = true
+fps2.TextSize = 14.000
+fps2.TextWrapped = true
+fps2.MouseButton1Down:connect(function()
+	while true do
+		local args = {
+			[1] = 1000
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end)
+
+
+fps5.Name = "fps5"
+fps5.Parent = Frame
+fps5.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+fps5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps5.BorderSizePixel = 0
+fps5.Position = UDim2.new(0.597803175, 0, 0.818201303, 0)
+fps5.Size = UDim2.new(0, 70, 0, 20)
+fps5.Font = Enum.Font.Michroma
+fps5.Text = "5000 FPS"
+fps5.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps5.TextScaled = true
+fps5.TextSize = 14.000
+fps5.TextWrapped = true
+fps5.MouseButton1Down:connect(function()
+	while true do
+		local args = {
+			[1] = 5000
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end)
+
+
+fps3.Name = "fps3"
+fps3.Parent = Frame
+fps3.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+fps3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps3.BorderSizePixel = 0
+fps3.Position = UDim2.new(0.597803175, 0, 0.476990134, 0)
+fps3.Size = UDim2.new(0, 70, 0, 20)
+fps3.Font = Enum.Font.Michroma
+fps3.Text = "2000 FPS"
+fps3.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps3.TextScaled = true
+fps3.TextSize = 14.000
+fps3.TextWrapped = true
+fps3.MouseButton1Down:connect(function()
+	while true do
+		local args = {
+			[1] = 2000
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end)
+
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, -0.000491529878, 0)
+TextLabel.Size = UDim2.new(0, 189, 0, 20)
+TextLabel.Font = Enum.Font.Michroma
+TextLabel.Text = "eTruck2137's Flex Your FPS! Gui"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 19.000
+TextLabel.TextWrapped = true
+
+-- Scripts:
+
+local function SPEV_fake_script() -- ez.TeleportOnClick 
+	local script = Instance.new('LocalScript', ez)
+
+	local targetPosition = Vector3.new(-1630.39, 32.05, 2010.47)
+	
+	local textButton = script.Parent
+	
+	local function teleportPlayer(player)
+	    local character = player.Character or player.CharacterAdded:Wait()
+	    if character then
+	        local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+	        if humanoidRootPart then
+	            humanoidRootPart.CFrame = CFrame.new(targetPosition)
+	        end
+	    end
+	end
+	
+	textButton.MouseButton1Click:Connect(function()
+	    local player = game.Players.LocalPlayer
+	    if player then
+	        teleportPlayer(player)
+	    end
+	end)
+end
+coroutine.wrap(SPEV_fake_script)()
+local function LHIU_fake_script() -- medium.TeleportOnClick 
+	local script = Instance.new('LocalScript', medium)
+
+	local targetPosition = Vector3.new(-1829.4, 75.05, 1940.06)
+	
+	local textButton = script.Parent
+	
+	local function teleportPlayer(player)
+	    local character = player.Character or player.CharacterAdded:Wait()
+	    if character then
+	        local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+	        if humanoidRootPart then
+	            humanoidRootPart.CFrame = CFrame.new(targetPosition)
+	        end
+	    end
+	end
+	
+	textButton.MouseButton1Click:Connect(function()
+	    local player = game.Players.LocalPlayer
+	    if player then
+	        teleportPlayer(player)
+	    end
+	end)
+end
+coroutine.wrap(LHIU_fake_script)()
+local function JULW_fake_script() -- hard.TeleportOnClick 
+	local script = Instance.new('LocalScript', hard)
+
+	local targetPosition = Vector3.new(-2051.76, 22.05, 1873.92)
+	
+	local textButton = script.Parent
+	
+	local function teleportPlayer(player)
+	    local character = player.Character or player.CharacterAdded:Wait()
+	    if character then
+	        local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+	        if humanoidRootPart then
+	            humanoidRootPart.CFrame = CFrame.new(targetPosition)
+	        end
+	    end
+	end
+	
+	textButton.MouseButton1Click:Connect(function()
+	    local player = game.Players.LocalPlayer
+	    if player then
+	        teleportPlayer(player)
+	    end
+	end)
+end
+coroutine.wrap(JULW_fake_script)()
+local function SNDJYYN_fake_script() -- extreme.TeleportOnClick 
+	local script = Instance.new('LocalScript', extreme)
+
+	local targetPosition = Vector3.new(-2034.85, 93.05, 1598.7)
+	
+	local textButton = script.Parent
+	
+	local function teleportPlayer(player)
+	    local character = player.Character or player.CharacterAdded:Wait()
+	    if character then
+	        local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+	        if humanoidRootPart then
+	            humanoidRootPart.CFrame = CFrame.new(targetPosition)
+	        end
+	    end
+	end
+	
+	textButton.MouseButton1Click:Connect(function()
+	    local player = game.Players.LocalPlayer
+	    if player then
+	        teleportPlayer(player)
+	    end
+	end)
+end
+coroutine.wrap(SNDJYYN_fake_script)()
+local function BYYD_fake_script() -- fps1.LocalScript 
+	local script = Instance.new('LocalScript', fps1)
+
+	while true do
+		local args = {
+			[1] = 0
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end
+coroutine.wrap(BYYD_fake_script)()
+local function UTGAEAW_fake_script() -- fps4.LocalScript 
+	local script = Instance.new('LocalScript', fps4)
+
+	while true do
+		local args = {
+			[1] = 3500
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end
+coroutine.wrap(UTGAEAW_fake_script)()
+local function TWIORUS_fake_script() -- fps2.LocalScript 
+	local script = Instance.new('LocalScript', fps2)
+
+	while true do
+		local args = {
+			[1] = 1000
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end
+coroutine.wrap(TWIORUS_fake_script)()
+local function IWEVMXE_fake_script() -- fps5.LocalScript 
+	local script = Instance.new('LocalScript', fps5)
+
+	while true do
+		local args = {
+			[1] = 5000
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end
+coroutine.wrap(IWEVMXE_fake_script)()
+local function VWISAK_fake_script() -- fps3.LocalScript 
+	local script = Instance.new('LocalScript', fps3)
+
+	while true do
+		local args = {
+			[1] = 2000
+		}
+		game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
+		wait(0.01)
+	end
+end
+coroutine.wrap(VWISAK_fake_script)()
+local function FWXJ_fake_script() -- Frame.Drag 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	local leadFrame = Instance.new('Frame') do
+		leadFrame.AnchorPoint = frame.AnchorPoint
+		leadFrame.Position = frame.Position
+		leadFrame.Size = frame.Size
+		leadFrame.Name = `Lead {frame.Name}`
+		leadFrame.Visible = false
+		leadFrame.Parent = frame.Parent
+	end
+	
+	local screenGui = frame:FindFirstAncestorOfClass('ScreenGui')
+	
+	local inputChanged = nil
+	local inputEnded = nil
+	
+	local function getBoundsRelations(guiObject : GuiObject)
+		local bounds = screenGui.AbsoluteSize
+		local topLeft = screenGui.IgnoreGuiInset and guiObject.AbsolutePosition + Vector2.new(0, 36) or guiObject.AbsolutePosition
+		local bottomRight = topLeft + guiObject.AbsoluteSize
+	
+		local boundRelations = {
+			Top = topLeft.Y < 0 and math.abs(topLeft.Y) or nil,
+			Left = topLeft.X < 0 and math.abs(topLeft.X) or nil,
+			Right = bottomRight.X > bounds.X and math.abs(bottomRight.X - bounds.X) or nil,
+			Bottom = bottomRight.Y > bounds.Y and math.abs(bottomRight.Y - bounds.Y) or nil,
+		}
+	
+		return (not boundRelations.Top
+			and not boundRelations.Bottom
+			and not boundRelations.Left
+			and not boundRelations.Right), boundRelations
+	end
+	
+	frame.InputBegan:Connect(function(inputObject : InputObject)
+		if inputObject.UserInputType == Enum.UserInputType.MouseButton1 then
+	
+			local lastMousePosition = UserInputService:GetMouseLocation()
+			local goalPosition = frame.Position
+	
+			inputChanged = UserInputService.InputChanged:Connect(function(input : InputObject, event : boolean)
+				if input.UserInputType == Enum.UserInputType.MouseMovement then
+					local currentMousePosition = UserInputService:GetMouseLocation()
+					local mouseDelta = currentMousePosition - lastMousePosition
+	
+					goalPosition += UDim2.fromOffset(mouseDelta.X, mouseDelta.Y)
+	
+					leadFrame.Position = goalPosition
+	
+					local isInBounds, relations = getBoundsRelations(leadFrame)
+	
+					if not isInBounds then
+						local x = (relations.Left or 0) - (relations.Right or 0)
+						local y = (relations.Top or 0) - (relations.Bottom or 0)
+	
+						goalPosition += UDim2.fromOffset(x, y)
+					end
+	
+					frame.Position = goalPosition
+					lastMousePosition = currentMousePosition
+				end
+			end)
+	
+			inputEnded = frame.InputEnded:Connect(function(input : InputObject)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 then
+					inputChanged:Disconnect()
+					inputChanged = nil
+	
+					inputEnded:Disconnect()
+					inputEnded = nil
+				end
+			end)
+		end
+	end)
+	
+	frame.Destroying:Once(function()
+	
+		leadFrame = leadFrame:Destroy()
+	
+		if inputChanged  then
+			inputChanged:Disconnect()
+			inputChanged = nil
+		end
+	
+		if inputEnded then
+			inputEnded:Disconnect()
+			inputEnded = nil
+		end
+	end)
+	
+end
+coroutine.wrap(FWXJ_fake_script)()
